@@ -1,23 +1,11 @@
-package Abstractprograms;
+package Java8Eg;
 
-class Test {
-	int a;
-	int b;
-	
-	Test()
-	{
-		this(10,20);
-		System.out.println("Inside default constructor\n");
-	}
-	
-	Test(int a,int b)
-	{
-		this.a=a;
-		this.b=b;
-		System.out.println("Inside parameterized constructor\n");
-	}
+public class Test {
 	public static void main(String[]args) {
-		Test object=new Test();
+		
+		new Thread(()->{
+			System.out.println("New thread created");
+		}).start();
 		
 	}
 
